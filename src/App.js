@@ -2,14 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import Todo from "./Composants/Todo";
 import TodoForm from "./Composants/Form";
+
 import React, { useState } from "react";
 
 
 function App() {
   const initialTodos = [
-    { text: "Apprendre JS", isCompleted: false },
-    { text: "Apprendre React", isCompleted: false },
-    { text: "Apprendre axios", isCompleted: false },
+    { text: "Ouvrier 1", isCompleted: false },
+    { text: "Ouvrier 2", isCompleted: false },
+    { text: "Ouvrier 3", isCompleted: false },
   ];
   const [todos, setTodos] = useState(initialTodos);
 
