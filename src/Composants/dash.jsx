@@ -10,13 +10,13 @@ class HomePage extends Component {
       <article>
         <div>
           <section>
-            <h1>Bienvenido a Invbox </h1>
+            <h1>BienVenue </h1>
                <div>
-                 <Link to="/">Home</Link>
+                 <Link to="/">Accueil</Link>
                </div>
                <div>
-                 <Link to="/login">Ingresar</Link>
-                 <Link to="/register">Registrate</Link>
+                 <Link to="/login">s'inscrire</Link>
+                 <Link to="/register">se connecter</Link>
                </div>
           </section>
         </div>
