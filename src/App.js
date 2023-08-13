@@ -8,7 +8,7 @@ import React, { useState } from "react";
 function App() {
   const initialTodos = [
     { text: "Apprendre JS", isCompleted: false },
-    { text: "Apprendre React", isCompleted: true },
+    { text: "Apprendre React", isCompleted: false },
     { text: "Apprendre axios", isCompleted: false },
   ];
   const [todos, setTodos] = useState(initialTodos);

@@ -18,9 +18,11 @@ function TodoForm(props) {
         className="input"
         value={todo}
         onChange={(event) => setTodo(event.target.value)}
+        
       />
     </form>
   );
+
 }
 
 export default TodoForm;
