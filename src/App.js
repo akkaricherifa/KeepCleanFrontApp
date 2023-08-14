@@ -4,6 +4,8 @@ import Todo from "./Composants/Todo";
 import TodoForm from "./Composants/Form";
 import bootstrap from "bootstrap";
 import React, { useState } from "react";
+import home from './Composants/Home/home';
+import Footer from "./Composants/Footer/Footer";
 
 
 
@@ -34,7 +36,6 @@ function App() {
 
 
   return (
-    
     <div className="app">
       <div className="todo-list">
       <h1>dddddddddd</h1>
@@ -47,6 +48,35 @@ function App() {
             removeTodo={removeTodo}
           />
         ))}
+        <switch>
+          <Route exact path="/" component={home}/>
+          <Route exact path="/footer" component={Footer}/>
+
+          <ProtectedRoute 
+          exact path="/admin/:id"
+          isAdmin={true} 
+          component={ProcessOrder}
+          />
+
+<ProtectedRoute 
+          exact path="/ouvrier/:id"
+          isOuvrier={true} 
+          component={ProcessOrder}
+          />
+
+<ProtectedRoute 
+          exact path="/soc/:id"
+          isSoc={true} 
+          component={ProcessOrder}
+          />
+
+
+
+
+
+
+        </switch>
+        
         <TodoForm addTodo={addTodo} />
       </div>
     </div>
