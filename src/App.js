@@ -6,6 +6,8 @@ import bootstrap from "bootstrap";
 import React, { useState } from "react";
 import home from './Composants/Home/home';
 import Footer from "./Composants/Footer/Footer";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ProtectedRoute from "./Composants/Route/ProtectedRoute";
 
 
 
@@ -58,7 +60,7 @@ function App() {
           component={ProcessOrder}
           />
 
-<ProtectedRoute 
+<ProtectedRoute
           exact path="/ouvrier/:id"
           isOuvrier={true} 
           component={ProcessOrder}
