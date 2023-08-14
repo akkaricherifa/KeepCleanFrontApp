@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router';
 
-class HomePage extends Component {
+class HomePage extends React.Component {
   render() {
     const dispatch = this.props.dispath;
     const { loggedIn } = this.props.data;
